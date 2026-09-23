@@ -1,8 +1,10 @@
 # Ledion Mujaj
 
-I wasn't always in tech. I was working at a car wash when I came across a documentary featuring Ryan Montgomery — a hacker who exposes predators and talks openly about what offensive security actually looks like. That was it for me. I went deep into researching the field, and the idea of breaking into systems with permission — getting there before the real attackers do, so defenders know exactly what they're up against — completely hooked me.
+My journey into cybersecurity started whilst I was working at a car wash. I came across a podcast featuring Ryan Montgomery and I still remember it to this day. Something about the way he talked about offensive security just clicked for me.
 
-I reinvested in myself, worked through CompTIA certifications, and started grinding HackTheBox. The more I learned, the more I wanted to go deeper. Right now I'm working toward HTB CPTS, CWES, and CAPE.
+I started going down the rabbit hole, researching the field and the whole idea of breaking into systems with permission, getting there before the real attackers do so defenders know what they are up against, I was sold.
+
+I reinvested in myself, got my CompTIA certs and started grinding HackTheBox. The more I learned the more I wanted to go deeper. Right now I am working toward HTB CPTS, CWES and CAPE.
 
 Everything I learn gets documented here and on [l3dsec.com](https://l3dsec.com).
 
@@ -28,12 +30,10 @@ Everything I learn gets documented here and on [l3dsec.com](https://l3dsec.com).
 
 | Section | Description |
 |---------|-------------|
-| [labs/](labs/README.md) | HTB and VulnHub walkthroughs |
-| [reports/](reports/README.md) | Penetration test reports |
-| [skills/](skills/README.md) | Red team skills with links to demonstrated techniques |
-| [oneliners/](oneliners/README.md) | Command cheatsheet for every phase |
-| [projects/](projects/README.md) | Research projects and tooling |
-| [tools/](tools/README.md) | Custom scripts and tools |
+| [labs](https://github.com/ledksv/lab-writeups) | Walkthroughs and pentest reports from labs I have completed |
+| [skills](https://github.com/ledksv/red-team-skills) | Red team skills with links to demonstrated techniques |
+| [oneliners](https://github.com/ledksv/pentest-oneliners) | Command cheatsheet for every phase |
+| [Enum-recon](https://github.com/ledksv/Enum-recon) | Custom recon and enumeration script |
 
 ---
 
@@ -41,7 +41,7 @@ Everything I learn gets documented here and on [l3dsec.com](https://l3dsec.com).
 
 ### Vulnerability Assessment & Risk Prioritisation
 
-Fingerprinted Mirth Connect 4.4.0 in HTB Interpreter, reproduced CVE-2023-43208 and traced exposed credentials and unsafe Python execution to root compromise. Reproduced SSRF (CVE-2022-46364) in HTB DevArea, chaining a config file leak to expose administrator credentials. Assessed exploitability and security impact, documenting PoC evidence, CVSS scores and remediation recommendations.
+Fingerprinted Mirth Connect 4.4.0 in [HTB Interpreter](https://github.com/ledksv/lab-writeups/blob/master/interpreter-htb.md), reproduced [CVE-2023-43208](https://github.com/ledksv/lab-writeups/blob/master/interpreter-htb.md) and traced exposed credentials and unsafe Python execution to root compromise. Reproduced SSRF ([CVE-2022-46364](https://github.com/ledksv/lab-writeups/blob/master/devarea-htb.md)) in [HTB DevArea](https://github.com/ledksv/lab-writeups/blob/master/devarea-htb.md), chaining a config file leak to expose administrator credentials. Assessed exploitability and security impact, documenting PoC evidence, CVSS scores and remediation recommendations.
 
 `CVE Research` `Nmap` `Nikto` `CVSS` `Risk Assessment`
 
@@ -49,7 +49,7 @@ Fingerprinted Mirth Connect 4.4.0 in HTB Interpreter, reproduced CVE-2023-43208 
 
 ### Web Application & Infrastructure Security
 
-Chained account takeover and RCE in HTB Silentium (CVE-2025-58434, CVE-2025-59528), progressing through exposed container credentials and an internal Git service to root access. Exploited path traversal (CVE-2025-49132) in HTB Pterodactyl to extract database credentials and gain SSH access. Service discovery, VHost enumeration and web fuzzing across 30+ machines.
+Chained account takeover and RCE in [HTB Silentium](https://github.com/ledksv/lab-writeups/blob/master/silentium-htb.md) ([CVE-2025-58434](https://github.com/ledksv/lab-writeups/blob/master/silentium-htb.md), [CVE-2025-59528](https://github.com/ledksv/lab-writeups/blob/master/silentium-htb.md)), progressing through exposed container credentials and an internal Git service to root access. Exploited path traversal ([CVE-2025-49132](https://github.com/ledksv/lab-writeups/blob/master/pterodactyl-htb.md)) in [HTB Pterodactyl](https://github.com/ledksv/lab-writeups/blob/master/pterodactyl-htb.md) to extract database credentials and gain SSH access. Service discovery, VHost enumeration and web fuzzing across 30+ machines.
 
 `Burp Suite` `ffuf` `Gobuster` `OWASP Top 10` `Web Exploitation`
 
@@ -65,7 +65,7 @@ Built a self-hosted Windows Server 2022/2019 domain to simulate a real enterpris
 
 ### AI & LLM Application Security
 
-Reproduced MCPJam Inspector RCE (CVE-2026-23744) in HTB Kobold and investigated Docker group privilege impact on container escape. Exploited a pre-auth WebSocket terminal bypass in HTB DevHub's marimo notebook, bypassing authentication to gain code execution as a service user.
+Reproduced MCPJam Inspector RCE ([CVE-2026-23744](https://github.com/ledksv/lab-writeups/blob/master/kobold-htb.md)) in [HTB Kobold](https://github.com/ledksv/lab-writeups/blob/master/kobold-htb.md) and investigated Docker group privilege impact on container escape. Exploited a pre-auth WebSocket terminal bypass in [HTB DevHub](https://github.com/ledksv/lab-writeups/blob/master/devhub-htb.md)'s marimo notebook, bypassing authentication to gain code execution as a service user.
 
 `LLM Security` `MCP` `OWASP LLM Top 10` `WebSocket` `AI Security`
 
@@ -73,24 +73,18 @@ Reproduced MCPJam Inspector RCE (CVE-2026-23744) in HTB Kobold and investigated 
 
 ### Security Automation & Tool Development
 
-Developed a [bash/Python reconnaissance pipeline](https://github.com/ledksv/Enum-recon) integrating OSINT, DNS/SSL checks, Nmap and web enumeration, cutting manual enumeration time significantly. Automated vulnerability scanning and SMB/SNMP enumeration with structured Markdown report output.
+Built a [bash/Python recon script](https://github.com/ledksv/Enum-recon) that runs OSINT, DNS/SSL checks, Nmap and web enumeration from one command. Outputs everything into a structured folder with a Markdown report.
 
 `Python` `Bash` `Automation` `Nmap NSE` `Reporting`
 
 ---
 
-## Labs
-
-30+ walkthroughs across HackTheBox and VulnHub. See [labs/README.md](labs/README.md) for the full list.
-
----
-
 ## Skills
 
-Five red team skill areas, each with links to where the technique was demonstrated:
+Pentesting skills I have built through hands-on lab work, each linked to the writeup where I applied it:
 
-- [Reconnaissance](skills/README.md#reconnaissance) — service enumeration, VHost fuzzing, OSINT
-- [Web Exploitation](skills/README.md#web-exploitation) — SQLi, SSRF, file upload, path traversal
-- [Active Directory](skills/README.md#active-directory) — Kerberoasting, PTH, DCSync, AS-REP
-- [Credential Access](skills/README.md#credential-access) — hash cracking, brute forcing, credential harvesting
-- [Privilege Escalation](skills/README.md#privilege-escalation) — sudo abuse, container escape, library/PATH hijacking
+- [Reconnaissance](https://github.com/ledksv/red-team-skills#reconnaissance) | service enumeration, VHost fuzzing, OSINT
+- [Web Exploitation](https://github.com/ledksv/red-team-skills#web-exploitation) | SQLi, SSRF, file upload, path traversal
+- [Active Directory](https://github.com/ledksv/red-team-skills#active-directory) | Kerberoasting, PTH, DCSync, AS-REP
+- [Credential Access](https://github.com/ledksv/red-team-skills#credential-access) | hash cracking, brute forcing, credential harvesting
+- [Privilege Escalation](https://github.com/ledksv/red-team-skills#privilege-escalation) | sudo abuse, container escape, library/PATH hijacking
