@@ -1,10 +1,10 @@
 # Ledion Mujaj
 
-My journey into cybersecurity started whilst I was working at a car wash. I came across a podcast featuring Ryan Montgomery and I still remember it to this day. Something about the way he talked about offensive security just clicked for me.
+I got into cybersecurity from an unlikely place. I was working at a car wash when I came across a podcast with Ryan Montgomery randomly on Youtube. I had never thought about hacking before but the way he talked about it, breaking into systems legally, finding the weaknesses before the real attackers do, it stuck with me.
 
-I started going down the rabbit hole, researching the field and the whole idea of breaking into systems with permission, getting there before the real attackers do so defenders know what they are up against, I was sold.
+I went home and started reading. The more I looked into it the more it made sense as a career. Security is not just a technical problem, it is a people and process problem, and someone has to think like an attacker to fix it properly. That idea is what pulled me in.
 
-I reinvested in myself, got my CompTIA certs and started grinding HackTheBox. The more I learned the more I wanted to go deeper. Right now I am working toward HTB CPTS, CWES and CAPE.
+I put the money I earned back into myself, worked through the CompTIA stack and started grinding HackTheBox. I have not stopped since. Right now I am working toward HTB CPTS, CWES and CAPE.
 
 Everything I learn gets documented here and on [l3dsec.com](https://l3dsec.com).
 
