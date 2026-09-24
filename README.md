@@ -4,7 +4,7 @@ I got into cybersecurity from an unlikely place. I was working at a car wash whe
 
 The notion of hacking into a system with permission, finding the flaws before someone with bad intentions does, that is what pulled me in.
 
-I put the money I earned back into myself, worked through the CompTIA stack and started grinding labs and even built my very own AD home lab!
+I put the money I earned back into myself, worked through the CompTIA stack and started putting my pentesting skills to the test on TryHackMe, VulnHub, HackTheBox and more. Even built my own AD home lab!
 
 Everything I learn gets documented here and on [l3dsec.com](https://l3dsec.com).
 
