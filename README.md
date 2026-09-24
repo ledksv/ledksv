@@ -2,9 +2,9 @@
 
 I got into cybersecurity from an unlikely place. I was working at a car wash when I came across a podcast with Ryan Montgomery randomly on Youtube. I had never thought about hacking before but the way he talked about it, breaking into systems legally, finding the weaknesses before the real attackers do, it stuck with me.
 
-I went home and started reading. The more I looked into it the more it made sense as a career. Security is not just a technical problem, it is a people and process problem, and someone has to think like an attacker to fix it properly. That idea is what pulled me in.
+The notion of hacking into a system with permission, finding the flaws before someone with bad intentions does, that is what pulled me in.
 
-I put the money I earned back into myself, worked through the CompTIA stack and started grinding HackTheBox. I have not stopped since. Right now I am working toward HTB CPTS, CWES and CAPE.
+I put the money I earned back into myself, worked through the CompTIA stack and started grinding labs and even built my very own AD home lab! I have not stopped since. Right now I am working toward HTB CPTS, CWES and CAPE.
 
 Everything I learn gets documented here and on [l3dsec.com](https://l3dsec.com).
 
